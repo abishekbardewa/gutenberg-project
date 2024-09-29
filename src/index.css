@@ -1,0 +1,131 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../assets/fonts/Montserrat-RegularItalic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../assets/fonts/Montserrat-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../assets/fonts/Montserrat-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../assets/fonts/Montserrat-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--primary-color: #5e56e7;
+	--background-light: #f8f7ff;
+	--grey-light: #f0f0f6;
+	--grey-medium: #a0a0a0;
+	--grey-dark: #333333;
+	--font-family-primary: 'Montserrat', sans-serif;
+}
+
+body {
+	font-family: var(--font-family-primary);
+	background-color: var(--background-light);
+	color: var(--grey-dark);
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 600;
+	font-family: var(--font-family-primary);
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 600;
+	font-family: var(--font-family-primary);
+}
+.title {
+	color: #5e56e7;
+	font-size: 48px;
+	font-family: var(--font-family-primary);
+}
+/* header-description {
+  color:
+} */
+
+.genre-card,
+.body-text,
+.search-input,
+.book-details {
+	font-family: var(--font-family-primary);
+}
+
+.genre-card {
+	font-size: 20px;
+}
+
+.body-text,
+.search-input,
+.book-details {
+	font-size: 16px;
+}
+
+.book-details {
+	font-size: 12px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 32px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col {
+	flex: 1;
+	padding: 15px;
+}
+
+@media (max-width: 768px) {
+	.col {
+		flex-basis: 100%;
+	}
+}

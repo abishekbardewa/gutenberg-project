@@ -1,0 +1,40 @@
+.book-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 12px;
+	width: 114px;
+	cursor: pointer;
+}
+
+.book-item img {
+	border-radius: 8px;
+	width: 114px;
+	height: 162px;
+	object-fit: cover;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+}
+.book-name {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 114px;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.book-author {
+	font-size: 12px;
+	font-weight: 700;
+	margin: 8px 0 0;
+	color: var(--grey-medium);
+}
+
+@media (max-width: 768px) {
+	.book-name,
+	.book-author {
+		font-size: 10px;
+	}
+}

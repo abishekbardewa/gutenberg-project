@@ -1,0 +1,69 @@
+.header-wrapper {
+	width: 100%;
+	background-image: url('../../assets/icons/Pattern.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+}
+.books-header-wrapper {
+	width: 100%;
+	background-color: #fff;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+}
+
+.header {
+	width: 100%;
+}
+
+.header-content {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 250px;
+	padding-bottom: 42px;
+}
+
+.title {
+	font-size: 48px;
+	color: var(--primary-color);
+	text-align: left;
+}
+
+.description {
+	font-size: 16px;
+	color: var(--grey-dark);
+	text-align: left;
+	margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 36px;
+	}
+
+	.description {
+		font-size: 14px;
+	}
+}
+.header-title-wraper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 12px;
+}
+.header-title-wraper .back-icon {
+	width: 32px;
+	height: 32px;
+	object-fit: cover;
+	cursor: pointer;
+}
